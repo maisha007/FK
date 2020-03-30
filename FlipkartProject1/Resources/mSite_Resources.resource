@@ -6,6 +6,7 @@ Resource    ../PageObjects/mSite_PageElements.resource
 *** Variables ***
 
 ${browser}=  chrome
+${webviewDevtoolsPort}=  9543
 ${url}=  https://www.flipkart.com
 ${udid}=  emulator-5554
 ${appiumHost}=        http://127.0.0.1:4723/wd/hub
@@ -30,7 +31,7 @@ ${login}=         text=Login
 *** Keywords ***
 
 Launch Device
-    Open Application    ${appiumHost}    ${automationName}    platformName=${platformName}    deviceName=${deviceName}   udid=${udid}    platformVersion=${platformVersion}  appPackage=${appPackage}  appActivity=${appActivity}  webviewDevtoolsPort=9543  noReset=true 
+    Open Application    ${appiumHost}    ${automationName}    platformName=${platformName}    deviceName=${deviceName}   udid=${udid}    platformVersion=${platformVersion}  appPackage=${appPackage}  appActivity=${appActivity}  webviewDevtoolsPort=${webviewDevtoolsPort}  noReset=true 
 
     #Click Element    class=android.widget.Button
     #Sleep    2
@@ -38,7 +39,8 @@ Launch Device
     #Sleep    2
     # Click Element    class=android.widget.Button
     #Sleep    2
-    Set Appium Timeout    2seconds
+    #Set Appium Timeout    10
+    Sleep    10    
     
 Browse URL
     Go To Url        ${url}  
@@ -46,80 +48,92 @@ Browse URL
     
 Login
     Click Text      text=Login    
-    Sleep    10    
-    Click Text    text=Use Email-ID    
+    Sleep    5   
+    Click Text    text=Use Email-ID        
+    Sleep    10   
+    Click Text   text=Continue
     Sleep    5    
-    Click Element    xpath://android.view.View[@index="1"]
-    Input Text    xpath://android.view.View[@index="1"]    text
     Click Text   text=Continue
-    Input Text    class=android.view.View    qa
-    Click Text   text=Continue
-    
+    Sleep    8    
 
 Menu
-    Click Element    ${menu_icon}
+    Click Text    text=menu  
+    Sleep    3    
     
 Life Insurance
-    Click Element    ${life_insurance_lnk}
+    Click Text    text=Insurance
+    Sleep    5
     
 Select Insurance Plan
-    Click Element       ${insurance_plan}    
-    Click Element       ${cont_btn}   
+    Click Text       text=1 Lakh Life Insurance Cover 
+    Sleep    5   
+    Click Text       text=Continue   
+    Sleep    5    
     
 Declaration
-    Click Element    ${declaration_1}  
-    Click Element    ${declaration_2}
-    Click Element    ${declaration_3}
-    Click Element   ${declaration_4}
-    Click Element    ${declaration_5}  
-    Click Element    ${close_tc}  
+    Click Text    text=High Cholesterol, High Blood Pressure  
+    Click Text    text=Cancer
+    Click Text    text=Stroke or any other heart diseases
+    Click Text   text=Diabetes   
+    Click Text    text=Any of the other diseases mentioned
+    Sleep    5
+    Click Text    text=closeBlack-c9684eaa 
+    Sleep    5
     
 Navigate to Enter Policy holder details
-    Click Element    ${confirm_declaration}  
+    Click Text    text=Confirm  
+    Sleep    5
     
 View Policy Deatils
-    Click Element    ${know_more}    
+    Click Text    text=Know More  
+    Sleep    5  
     
 Hide Policy Details
-    Click Element    ${hide_knowmore}
-    
-Enetr Policy holder details
-    Input Text     ${policyholder_name}    ${policy_holder} 
-    Input Text     ${policyholder_number}    ${ph_number}
-    Input Text    ${policyholder_email}    ${ph_email}
+    Click Text    text=Enter Policy Holder Details
+    Sleep    3
     
 Back
-    Click Element    ${back_navgation}
+    Click Text    text=back-e9e0ceba
+    Sleep    5
     
 Back to Home
-    Back
+    Click Text    text=javascript:void(0)    
+    Sleep    10
        
 My Orders
-    Click Element    ${my_orders}
+    Click Text    text=My Orders
+    Sleep    5
     
 My Insurance Policy
-    Click Element    ${my_incurance_policy}
+    Click Text    text=Insurance
+    Sleep    5
     
 Insurance Order Deatils
-    Click Element    ${insurance_plan}
+    Click Text    text=1 Lakh Life Insurance Cover
+    Sleep    5
     
 Back to My Insurance Policy
     Back
     
 Back to My Orders
-    Back
-    
+    Back to Home
+  
 Back to Home Screen
     Back
    
 My Account
-    Execute Script    ${scroll_down}
-    Click Element     ${my_account}
+    Swipe By Percent    50    85    50    30          
+    Sleep    5
+    Click Text     text=My Account
+    Sleep    5
     
 Logout
-    Execute Script    ${scroll_down}    
-    Click Element        ${logout_from_all_devices}
-    Click Element        ${confirm_logout}    
+    Swipe By Percent    50    85    50    40  
+    Sleep    5
+    Click Text        text=Logout of all devices
+    Sleep    5
+    Click Text       text=YES   
+    Sleep    10   
 
     
 Close All Application

@@ -32,14 +32,11 @@ View selected Policy details
 Hide Policy Deatils
     Hide Policy Details
     
-Fill Policy Holder details
-    Enetr Policy holder details
-    
 Navigate back to Life Insurance landing Screen
     Back
     
 Navigate back to Home screen
-    Back
+    Back to Home
     
 Navigate to My Orders
     Menu
@@ -55,7 +52,7 @@ Navigate back to My InsurancePolicy
     Back
     
 Navigate back to My Orders
-    Back
+    Back to Home
     
 Navigate back to Home
     Back

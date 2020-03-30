@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.2 on win32)" generated="20200326 18:35:50.537" rpa="false">
-<suite id="s1" name="FlipkartProject1" source="C:\Users\Mahesha\eclipse-workspace\robot\FlipkartProject1">
-<suite id="s1-s1" name="POC" source="C:\Users\Mahesha\eclipse-workspace\robot\FlipkartProject1\POC">
-<suite id="s1-s1-s1" name="FlipKartmSite" source="C:\Users\Mahesha\eclipse-workspace\robot\FlipkartProject1\POC\FlipKartmSite.robot">
+<robot generator="Robot 3.1.2 (Python 3.7.2 on win32)" generated="20200330 14:16:07.995" rpa="false">
+<suite id="s1" name="FlipkartProject1" source="C:\Users\Mahesha\git\FK\FlipkartProject1">
+<suite id="s1-s1" name="POC" source="C:\Users\Mahesha\git\FK\FlipkartProject1\POC">
+<suite id="s1-s1-s1" name="FlipKartmSite" source="C:\Users\Mahesha\git\FK\FlipkartProject1\POC\FlipKartmSite.robot">
 <test id="s1-s1-s1-t1" name="Login">
 <kw name="Launch Device" library="mSite_Resources">
 <kw name="Open Application" library="AppiumLibrary">
@@ -21,19 +21,20 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>platformVersion=${platformVersion}</arg>
 <arg>appPackage=${appPackage}</arg>
 <arg>appActivity=${appActivity}</arg>
-<arg>webviewDevtoolsPort=9543</arg>
+<arg>webviewDevtoolsPort=${webviewDevtoolsPort}</arg>
 <arg>noReset=true</arg>
 </arguments>
-<status status="PASS" starttime="20200326 18:35:50.898" endtime="20200326 18:36:02.514"></status>
+<status status="PASS" starttime="20200330 14:16:08.298" endtime="20200330 14:16:15.652"></status>
 </kw>
-<kw name="Set Appium Timeout" library="AppiumLibrary">
-<doc>Sets the timeout in seconds used by various keywords.</doc>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>2seconds</arg>
+<arg>10</arg>
 </arguments>
-<status status="PASS" starttime="20200326 18:36:02.515" endtime="20200326 18:36:02.516"></status>
+<msg timestamp="20200330 14:16:25.654" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:16:15.653" endtime="20200330 14:16:25.654"></status>
 </kw>
-<status status="PASS" starttime="20200326 18:35:50.898" endtime="20200326 18:36:02.517"></status>
+<status status="PASS" starttime="20200330 14:16:08.297" endtime="20200330 14:16:25.655"></status>
 </kw>
 <kw name="Browse URL" library="mSite_Resources">
 <kw name="Go To Url" library="AppiumLibrary">
@@ -41,17 +42,17 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arguments>
 <arg>${url}</arg>
 </arguments>
-<status status="PASS" starttime="20200326 18:36:02.520" endtime="20200326 18:36:04.335"></status>
+<status status="PASS" starttime="20200330 14:16:25.656" endtime="20200330 14:16:26.087"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10</arg>
 </arguments>
-<msg timestamp="20200326 18:36:14.338" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200326 18:36:04.336" endtime="20200326 18:36:14.338"></status>
+<msg timestamp="20200330 14:16:36.090" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:16:26.087" endtime="20200330 14:16:36.090"></status>
 </kw>
-<status status="PASS" starttime="20200326 18:36:02.518" endtime="20200326 18:36:14.338"></status>
+<status status="PASS" starttime="20200330 14:16:25.655" endtime="20200330 14:16:36.091"></status>
 </kw>
 <kw name="Login" library="mSite_Resources">
 <kw name="Click Text" library="AppiumLibrary">
@@ -59,425 +60,642 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arguments>
 <arg>text=Login</arg>
 </arguments>
-<status status="PASS" starttime="20200326 18:36:14.339" endtime="20200326 18:36:16.453"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>10</arg>
-</arguments>
-<msg timestamp="20200326 18:36:26.456" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200326 18:36:16.454" endtime="20200326 18:36:26.456"></status>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<doc>Click text identified by ``text``.</doc>
-<arguments>
-<arg>text=Use Email-ID</arg>
-</arguments>
-<status status="PASS" starttime="20200326 18:36:26.456" endtime="20200326 18:36:26.651"></status>
+<status status="PASS" starttime="20200330 14:16:36.092" endtime="20200330 14:16:36.319"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20200326 18:36:31.653" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200326 18:36:26.652" endtime="20200326 18:36:31.654"></status>
+<msg timestamp="20200330 14:16:41.321" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200330 14:16:36.320" endtime="20200330 14:16:41.322"></status>
 </kw>
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
 <arguments>
-<arg>xpath://android.view.View[@index="1"]</arg>
+<arg>text=Use Email-ID</arg>
 </arguments>
-<msg timestamp="20200326 18:36:31.663" level="INFO">Clicking element 'xpath://android.view.View[@index="1"]'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:32.357" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:31.664" endtime="20200326 18:36:32.357"></status>
+<status status="PASS" starttime="20200330 14:16:41.323" endtime="20200330 14:16:41.437"></status>
 </kw>
-<msg timestamp="20200326 18:36:32.481" level="FAIL">ValueError: Element locator with prefix 'xpath://android.view.view[@index' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:31.655" endtime="20200326 18:36:32.481"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200330 14:16:51.438" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:16:41.437" endtime="20200330 14:16:51.439"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:14.339" endtime="20200326 18:36:32.498"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200330 14:16:56.531" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200330 14:16:51.440" endtime="20200330 14:16:56.531"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:35:50.897" endtime="20200326 18:36:32.499" critical="yes">ValueError: Element locator with prefix 'xpath://android.view.view[@index' is not supported</status>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=Continue</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:16:56.531" endtime="20200330 14:16:56.629"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200330 14:17:01.630" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200330 14:16:56.629" endtime="20200330 14:17:01.630"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=Continue</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:17:01.631" endtime="20200330 14:17:01.742"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>8</arg>
+</arguments>
+<msg timestamp="20200330 14:17:09.744" level="INFO">Slept 8 seconds</msg>
+<status status="PASS" starttime="20200330 14:17:01.743" endtime="20200330 14:17:09.745"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:16:36.091" endtime="20200330 14:17:09.746"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:16:08.297" endtime="20200330 14:17:09.747" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t2" name="Open Menu">
 <kw name="Menu" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
 <arguments>
-<arg>${menu_icon}</arg>
+<arg>text=menu</arg>
 </arguments>
-<msg timestamp="20200326 18:36:32.502" level="INFO">Clicking element 'text=menu'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:33.082" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:32.502" endtime="20200326 18:36:33.082"></status>
+<status status="PASS" starttime="20200330 14:17:09.753" endtime="20200330 14:17:09.967"></status>
 </kw>
-<msg timestamp="20200326 18:36:33.083" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:32.500" endtime="20200326 18:36:33.083"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200330 14:17:14.969" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200330 14:17:09.967" endtime="20200330 14:17:14.970"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:32.500" endtime="20200326 18:36:33.083"></status>
+<status status="PASS" starttime="20200330 14:17:09.751" endtime="20200330 14:17:14.971"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:32.499" endtime="20200326 18:36:33.083" critical="yes">ValueError: Element locator with prefix 'text' is not supported</status>
+<status status="PASS" starttime="20200330 14:17:09.749" endtime="20200330 14:17:14.972" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t3" name="Navigate to Life Insurance landing Screen">
 <kw name="Life Insurance" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
 <arguments>
-<arg>${life_insurance_lnk}</arg>
+<arg>text=Insurance</arg>
 </arguments>
-<msg timestamp="20200326 18:36:33.086" level="INFO">Clicking element 'text=Insurance NEW'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:33.716" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-3.png"&gt;&lt;img src="appium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:33.087" endtime="20200326 18:36:33.717"></status>
+<status status="PASS" starttime="20200330 14:17:14.978" endtime="20200330 14:17:15.259"></status>
 </kw>
-<msg timestamp="20200326 18:36:33.717" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:33.085" endtime="20200326 18:36:33.718"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200330 14:17:20.261" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200330 14:17:15.259" endtime="20200330 14:17:20.262"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:33.084" endtime="20200326 18:36:33.718"></status>
+<status status="PASS" starttime="20200330 14:17:14.976" endtime="20200330 14:17:20.263"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:33.084" endtime="20200326 18:36:33.718" critical="yes">ValueError: Element locator with prefix 'text' is not supported</status>
+<status status="PASS" starttime="20200330 14:17:14.974" endtime="20200330 14:17:20.264" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t4" name="Select Insurance Plan">
 <kw name="Select Insurance Plan" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
 <arguments>
-<arg>${insurance_plan}</arg>
+<arg>text=1 Lakh Life Insurance Cover</arg>
 </arguments>
-<msg timestamp="20200326 18:36:33.721" level="INFO">Clicking element 'text=1 Lakh Life Insurance Cover'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:34.335" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-4.png"&gt;&lt;img src="appium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:33.722" endtime="20200326 18:36:34.335"></status>
+<status status="PASS" starttime="20200330 14:17:20.270" endtime="20200330 14:17:20.374"></status>
 </kw>
-<msg timestamp="20200326 18:36:34.336" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:33.719" endtime="20200326 18:36:34.336"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200330 14:17:25.375" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200330 14:17:20.374" endtime="20200330 14:17:25.376"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:33.719" endtime="20200326 18:36:34.337"></status>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=Continue</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:17:25.377" endtime="20200330 14:17:25.498"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:33.718" endtime="20200326 18:36:34.337" critical="yes">ValueError: Element locator with prefix 'text' is not supported</status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200330 14:17:30.499" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200330 14:17:25.498" endtime="20200330 14:17:30.501"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:17:20.267" endtime="20200330 14:17:30.502"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:17:20.266" endtime="20200330 14:17:30.503" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t5" name="Declaration and T&amp;C">
 <kw name="Declaration" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
 <arguments>
-<arg>${declaration_1}</arg>
+<arg>text=High Cholesterol, High Blood Pressure</arg>
 </arguments>
-<msg timestamp="20200326 18:36:34.340" level="INFO">Clicking element 'text=High Cholesterol, High Blood Pressure'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:34.903" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-5.png"&gt;&lt;img src="appium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:34.340" endtime="20200326 18:36:34.903"></status>
+<status status="PASS" starttime="20200330 14:17:30.508" endtime="20200330 14:17:30.659"></status>
 </kw>
-<msg timestamp="20200326 18:36:34.904" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:34.338" endtime="20200326 18:36:34.904"></status>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=Cancer</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:17:30.659" endtime="20200330 14:17:31.309"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:34.338" endtime="20200326 18:36:34.904"></status>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=Stroke or any other heart diseases</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:17:31.309" endtime="20200330 14:17:31.922"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:34.337" endtime="20200326 18:36:34.904" critical="yes">ValueError: Element locator with prefix 'text' is not supported</status>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=Diabetes</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:17:31.923" endtime="20200330 14:17:32.576"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200330 14:17:37.580" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200330 14:17:32.577" endtime="20200330 14:17:37.581"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=Any of the other diseases mentioned</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:17:37.582" endtime="20200330 14:17:37.706"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200330 14:17:42.707" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200330 14:17:37.706" endtime="20200330 14:17:42.707"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=closeBlack-c9684eaa</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:17:42.707" endtime="20200330 14:17:42.865"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200330 14:17:47.866" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200330 14:17:42.865" endtime="20200330 14:17:47.866"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=the other diseases mentioned</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:17:47.867" endtime="20200330 14:17:47.972"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200330 14:17:52.975" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200330 14:17:47.972" endtime="20200330 14:17:52.975"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=closeBlack-c9684eaa</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:17:52.975" endtime="20200330 14:17:53.161"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200330 14:17:58.163" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200330 14:17:53.161" endtime="20200330 14:17:58.164"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:17:30.506" endtime="20200330 14:17:58.165"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:17:30.505" endtime="20200330 14:17:58.166" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t6" name="Navigate to enter details">
 <kw name="Navigate to Enter Policy holder details" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
 <arguments>
-<arg>${confirm_declaration}</arg>
+<arg>text=Confirm</arg>
 </arguments>
-<msg timestamp="20200326 18:36:34.908" level="INFO">Clicking element 'text=Confirm'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:35.491" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-6.png"&gt;&lt;img src="appium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:34.908" endtime="20200326 18:36:35.491"></status>
+<status status="PASS" starttime="20200330 14:17:58.170" endtime="20200330 14:17:58.936"></status>
 </kw>
-<msg timestamp="20200326 18:36:35.492" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:34.906" endtime="20200326 18:36:35.492"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200330 14:18:08.937" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:17:58.936" endtime="20200330 14:18:08.938"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:34.905" endtime="20200326 18:36:35.492"></status>
+<status status="PASS" starttime="20200330 14:17:58.168" endtime="20200330 14:18:08.939"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:34.905" endtime="20200326 18:36:35.492" critical="yes">ValueError: Element locator with prefix 'text' is not supported</status>
+<status status="PASS" starttime="20200330 14:17:58.167" endtime="20200330 14:18:08.940" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t7" name="View selected Policy details">
 <kw name="View Policy Deatils" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
 <arguments>
-<arg>${know_more}</arg>
+<arg>text=Know More</arg>
 </arguments>
-<msg timestamp="20200326 18:36:35.495" level="INFO">Clicking element 'text=Know More'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:36.067" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-7.png"&gt;&lt;img src="appium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:35.495" endtime="20200326 18:36:36.067"></status>
+<status status="PASS" starttime="20200330 14:18:08.946" endtime="20200330 14:18:09.076"></status>
 </kw>
-<msg timestamp="20200326 18:36:36.068" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:35.494" endtime="20200326 18:36:36.068"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200330 14:18:19.076" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:18:09.076" endtime="20200330 14:18:19.077"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:35.493" endtime="20200326 18:36:36.068"></status>
+<status status="PASS" starttime="20200330 14:18:08.944" endtime="20200330 14:18:19.078"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:35.493" endtime="20200326 18:36:36.069" critical="yes">ValueError: Element locator with prefix 'text' is not supported</status>
+<status status="PASS" starttime="20200330 14:18:08.942" endtime="20200330 14:18:19.079" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t8" name="Hide Policy Deatils">
 <kw name="Hide Policy Details" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
 <arguments>
-<arg>${hide_knowmore}</arg>
+<arg>text=Enter Policy Holder Details</arg>
 </arguments>
-<msg timestamp="20200326 18:36:36.072" level="INFO">Clicking element 'class=android.view.View'.</msg>
-<status status="PASS" starttime="20200326 18:36:36.070" endtime="20200326 18:36:36.140"></status>
+<status status="PASS" starttime="20200330 14:18:19.085" endtime="20200330 14:18:19.226"></status>
 </kw>
-<status status="PASS" starttime="20200326 18:36:36.070" endtime="20200326 18:36:36.141"></status>
-</kw>
-<status status="PASS" starttime="20200326 18:36:36.069" endtime="20200326 18:36:36.141" critical="yes"></status>
-</test>
-<test id="s1-s1-s1-t9" name="Fill Policy Holder details">
-<kw name="Enetr Policy holder details" library="mSite_Resources">
-<kw name="Input Text" library="AppiumLibrary">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>${policyholder_name}</arg>
-<arg>${policy_holder}</arg>
+<arg>10</arg>
 </arguments>
-<msg timestamp="20200326 18:36:36.144" level="INFO">Typing text 'Mahesha' into text field 'xpath=//android.view.View[@text='Full Name*']'</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:36.878" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-8.png"&gt;&lt;img src="appium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:36.304" endtime="20200326 18:36:36.878"></status>
+<msg timestamp="20200330 14:18:29.227" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:18:19.226" endtime="20200330 14:18:29.228"></status>
 </kw>
-<msg timestamp="20200326 18:36:36.879" level="FAIL">ValueError: Element locator 'xpath=//android.view.View[@text='Full Name*']' did not match any elements.</msg>
-<status status="FAIL" starttime="20200326 18:36:36.142" endtime="20200326 18:36:36.879"></status>
+<status status="PASS" starttime="20200330 14:18:19.083" endtime="20200330 14:18:29.229"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:36.142" endtime="20200326 18:36:36.879"></status>
-</kw>
-<status status="FAIL" starttime="20200326 18:36:36.141" endtime="20200326 18:36:36.879" critical="yes">ValueError: Element locator 'xpath=//android.view.View[@text='Full Name*']' did not match any elements.</status>
+<status status="PASS" starttime="20200330 14:18:19.081" endtime="20200330 14:18:29.230" critical="yes"></status>
 </test>
-<test id="s1-s1-s1-t10" name="Navigate back to Life Insurance landing Screen">
+<test id="s1-s1-s1-t9" name="Navigate back to Life Insurance landing Screen">
 <kw name="Back" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
 <arguments>
-<arg>${back_navgation}</arg>
+<arg>text=back-e9e0ceba</arg>
 </arguments>
-<msg timestamp="20200326 18:36:36.882" level="INFO">Clicking element 'text=back-e9e0ceba'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:37.486" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-9.png"&gt;&lt;img src="appium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:36.882" endtime="20200326 18:36:37.487"></status>
+<status status="PASS" starttime="20200330 14:18:29.236" endtime="20200330 14:18:29.359"></status>
 </kw>
-<msg timestamp="20200326 18:36:37.488" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:36.880" endtime="20200326 18:36:37.488"></status>
-</kw>
-<status status="FAIL" starttime="20200326 18:36:36.880" endtime="20200326 18:36:37.488"></status>
-</kw>
-<status status="FAIL" starttime="20200326 18:36:36.880" endtime="20200326 18:36:37.489" critical="yes">ValueError: Element locator with prefix 'text' is not supported</status>
-</test>
-<test id="s1-s1-s1-t11" name="Navigate back to Home screen">
-<kw name="Back" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>${back_navgation}</arg>
+<arg>10</arg>
 </arguments>
-<msg timestamp="20200326 18:36:37.493" level="INFO">Clicking element 'text=back-e9e0ceba'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:38.066" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-10.png"&gt;&lt;img src="appium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:37.493" endtime="20200326 18:36:38.066"></status>
+<msg timestamp="20200330 14:18:39.361" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:18:29.359" endtime="20200330 14:18:39.362"></status>
 </kw>
-<msg timestamp="20200326 18:36:38.067" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:37.491" endtime="20200326 18:36:38.067"></status>
+<status status="PASS" starttime="20200330 14:18:29.234" endtime="20200330 14:18:39.363"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:37.490" endtime="20200326 18:36:38.067"></status>
-</kw>
-<status status="FAIL" starttime="20200326 18:36:37.489" endtime="20200326 18:36:38.068" critical="yes">ValueError: Element locator with prefix 'text' is not supported</status>
+<status status="PASS" starttime="20200330 14:18:29.232" endtime="20200330 14:18:39.364" critical="yes"></status>
 </test>
-<test id="s1-s1-s1-t12" name="Navigate to My Orders">
+<test id="s1-s1-s1-t10" name="Navigate back to Home screen">
+<kw name="Back to Home" library="mSite_Resources">
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=javascript:void(0)</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:18:39.370" endtime="20200330 14:18:39.464"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200330 14:18:49.465" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:18:39.464" endtime="20200330 14:18:49.466"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:18:39.368" endtime="20200330 14:18:49.467"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:18:39.366" endtime="20200330 14:18:49.468" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t11" name="Navigate to My Orders">
 <kw name="Menu" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
 <arguments>
-<arg>${menu_icon}</arg>
+<arg>text=menu</arg>
 </arguments>
-<msg timestamp="20200326 18:36:38.071" level="INFO">Clicking element 'text=menu'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:38.630" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-11.png"&gt;&lt;img src="appium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:38.072" endtime="20200326 18:36:38.630"></status>
+<status status="PASS" starttime="20200330 14:18:49.474" endtime="20200330 14:18:49.699"></status>
 </kw>
-<msg timestamp="20200326 18:36:38.631" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:38.069" endtime="20200326 18:36:38.631"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200330 14:18:54.701" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200330 14:18:49.699" endtime="20200330 14:18:54.701"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:38.069" endtime="20200326 18:36:38.631"></status>
+<status status="PASS" starttime="20200330 14:18:49.472" endtime="20200330 14:18:54.702"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:38.068" endtime="20200326 18:36:38.632" critical="yes">ValueError: Element locator with prefix 'text' is not supported</status>
+<kw name="My Orders" library="mSite_Resources">
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=My Orders</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:18:54.704" endtime="20200330 14:18:54.947"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200330 14:19:04.950" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:18:54.948" endtime="20200330 14:19:04.951"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:18:54.703" endtime="20200330 14:19:04.952"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:18:49.470" endtime="20200330 14:19:04.953" critical="yes"></status>
 </test>
-<test id="s1-s1-s1-t13" name="Navigate to My Insurance Policy">
+<test id="s1-s1-s1-t12" name="Navigate to My Insurance Policy">
 <kw name="My Insurance Policy" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
 <arguments>
-<arg>${my_incurance_policy}</arg>
+<arg>text=Insurance</arg>
 </arguments>
-<msg timestamp="20200326 18:36:38.635" level="INFO">Clicking element 'text=Insurance'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:39.205" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-12.png"&gt;&lt;img src="appium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:38.635" endtime="20200326 18:36:39.205"></status>
+<status status="PASS" starttime="20200330 14:19:04.959" endtime="20200330 14:19:05.129"></status>
 </kw>
-<msg timestamp="20200326 18:36:39.206" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:38.633" endtime="20200326 18:36:39.206"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200330 14:19:15.131" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:19:05.130" endtime="20200330 14:19:15.132"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:38.633" endtime="20200326 18:36:39.207"></status>
+<status status="PASS" starttime="20200330 14:19:04.957" endtime="20200330 14:19:15.133"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:38.632" endtime="20200326 18:36:39.207" critical="yes">ValueError: Element locator with prefix 'text' is not supported</status>
+<status status="PASS" starttime="20200330 14:19:04.955" endtime="20200330 14:19:15.134" critical="yes"></status>
 </test>
-<test id="s1-s1-s1-t14" name="View Insurance order details">
+<test id="s1-s1-s1-t13" name="View Insurance order details">
 <kw name="Insurance Order Deatils" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
 <arguments>
-<arg>${insurance_plan}</arg>
+<arg>text=1 Lakh Life Insurance Cover</arg>
 </arguments>
-<msg timestamp="20200326 18:36:39.210" level="INFO">Clicking element 'text=1 Lakh Life Insurance Cover'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:39.783" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-13.png"&gt;&lt;img src="appium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:39.210" endtime="20200326 18:36:39.783"></status>
+<status status="PASS" starttime="20200330 14:19:15.139" endtime="20200330 14:19:15.278"></status>
 </kw>
-<msg timestamp="20200326 18:36:39.784" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:39.208" endtime="20200326 18:36:39.784"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200330 14:19:25.280" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:19:15.278" endtime="20200330 14:19:25.281"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:39.208" endtime="20200326 18:36:39.784"></status>
+<status status="PASS" starttime="20200330 14:19:15.137" endtime="20200330 14:19:25.282"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:39.207" endtime="20200326 18:36:39.785" critical="yes">ValueError: Element locator with prefix 'text' is not supported</status>
+<status status="PASS" starttime="20200330 14:19:15.135" endtime="20200330 14:19:25.283" critical="yes"></status>
 </test>
-<test id="s1-s1-s1-t15" name="Navigate back to My InsurancePolicy">
+<test id="s1-s1-s1-t14" name="Navigate back to My InsurancePolicy">
 <kw name="Back" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
 <arguments>
-<arg>${back_navgation}</arg>
+<arg>text=back-e9e0ceba</arg>
 </arguments>
-<msg timestamp="20200326 18:36:39.788" level="INFO">Clicking element 'text=back-e9e0ceba'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:40.349" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-14.png"&gt;&lt;img src="appium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:39.788" endtime="20200326 18:36:40.349"></status>
+<status status="PASS" starttime="20200330 14:19:25.289" endtime="20200330 14:19:25.422"></status>
 </kw>
-<msg timestamp="20200326 18:36:40.350" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:39.786" endtime="20200326 18:36:40.350"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200330 14:19:35.423" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:19:25.422" endtime="20200330 14:19:35.424"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:39.786" endtime="20200326 18:36:40.351"></status>
+<status status="PASS" starttime="20200330 14:19:25.287" endtime="20200330 14:19:35.425"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:39.785" endtime="20200326 18:36:40.351" critical="yes">ValueError: Element locator with prefix 'text' is not supported</status>
+<status status="PASS" starttime="20200330 14:19:25.285" endtime="20200330 14:19:35.426" critical="yes"></status>
 </test>
-<test id="s1-s1-s1-t16" name="Navigate back to My Orders">
+<test id="s1-s1-s1-t15" name="Navigate back to My Orders">
+<kw name="Back to Home" library="mSite_Resources">
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=javascript:void(0)</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:19:35.432" endtime="20200330 14:19:35.552"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200330 14:19:45.555" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:19:35.553" endtime="20200330 14:19:45.555"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:19:35.430" endtime="20200330 14:19:45.556"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:19:35.428" endtime="20200330 14:19:45.556" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t16" name="Navigate back to Home">
 <kw name="Back" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
 <arguments>
-<arg>${back_navgation}</arg>
+<arg>text=back-e9e0ceba</arg>
 </arguments>
-<msg timestamp="20200326 18:36:40.354" level="INFO">Clicking element 'text=back-e9e0ceba'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:40.923" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-15.png"&gt;&lt;img src="appium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:40.354" endtime="20200326 18:36:40.924"></status>
+<status status="PASS" starttime="20200330 14:19:45.559" endtime="20200330 14:19:45.700"></status>
 </kw>
-<msg timestamp="20200326 18:36:40.925" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:40.352" endtime="20200326 18:36:40.925"></status>
-</kw>
-<status status="FAIL" starttime="20200326 18:36:40.352" endtime="20200326 18:36:40.925"></status>
-</kw>
-<status status="FAIL" starttime="20200326 18:36:40.351" endtime="20200326 18:36:40.925" critical="yes">ValueError: Element locator with prefix 'text' is not supported</status>
-</test>
-<test id="s1-s1-s1-t17" name="Navigate back to Home">
-<kw name="Back" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>${back_navgation}</arg>
+<arg>10</arg>
 </arguments>
-<msg timestamp="20200326 18:36:40.928" level="INFO">Clicking element 'text=back-e9e0ceba'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:41.521" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-16.png"&gt;&lt;img src="appium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:40.929" endtime="20200326 18:36:41.521"></status>
+<msg timestamp="20200330 14:19:55.702" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:19:45.700" endtime="20200330 14:19:55.703"></status>
 </kw>
-<msg timestamp="20200326 18:36:41.522" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:40.927" endtime="20200326 18:36:41.522"></status>
+<status status="PASS" starttime="20200330 14:19:45.558" endtime="20200330 14:19:55.704"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:40.926" endtime="20200326 18:36:41.522"></status>
-</kw>
-<status status="FAIL" starttime="20200326 18:36:40.926" endtime="20200326 18:36:41.522" critical="yes">ValueError: Element locator with prefix 'text' is not supported</status>
+<status status="PASS" starttime="20200330 14:19:45.557" endtime="20200330 14:19:55.705" critical="yes"></status>
 </test>
-<test id="s1-s1-s1-t18" name="Navigate to My Accounts">
+<test id="s1-s1-s1-t17" name="Navigate to My Accounts">
 <kw name="Menu" library="mSite_Resources">
-<kw name="Click Element" library="AppiumLibrary">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
 <arguments>
-<arg>${menu_icon}</arg>
+<arg>text=menu</arg>
 </arguments>
-<msg timestamp="20200326 18:36:41.526" level="INFO">Clicking element 'text=menu'.</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:42.122" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-17.png"&gt;&lt;img src="appium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:41.526" endtime="20200326 18:36:42.122"></status>
+<status status="PASS" starttime="20200330 14:19:55.710" endtime="20200330 14:19:55.900"></status>
 </kw>
-<msg timestamp="20200326 18:36:42.123" level="FAIL">ValueError: Element locator with prefix 'text' is not supported</msg>
-<status status="FAIL" starttime="20200326 18:36:41.524" endtime="20200326 18:36:42.123"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200330 14:20:00.903" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200330 14:19:55.901" endtime="20200330 14:20:00.904"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:41.523" endtime="20200326 18:36:42.123"></status>
+<status status="PASS" starttime="20200330 14:19:55.708" endtime="20200330 14:20:00.904"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:41.523" endtime="20200326 18:36:42.124" critical="yes">ValueError: Element locator with prefix 'text' is not supported</status>
+<kw name="My Account" library="mSite_Resources">
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>85</arg>
+<arg>50</arg>
+<arg>30</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:20:00.907" endtime="20200330 14:20:02.007"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200330 14:20:12.010" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:20:02.008" endtime="20200330 14:20:12.011"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=My Account</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:20:12.012" endtime="20200330 14:20:12.279"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200330 14:20:22.279" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:20:12.279" endtime="20200330 14:20:22.280"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:20:00.905" endtime="20200330 14:20:22.281"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:19:55.706" endtime="20200330 14:20:22.282" critical="yes"></status>
 </test>
-<test id="s1-s1-s1-t19" name="Logout">
+<test id="s1-s1-s1-t18" name="Logout">
 <kw name="Logout" library="mSite_Resources">
-<kw name="Execute Script" library="AppiumLibrary">
-<doc>Inject a snippet of JavaScript into the page for execution in the
-context of the currently selected frame (Web context only).</doc>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
 <arguments>
-<arg>${scroll_down}</arg>
+<arg>50</arg>
+<arg>85</arg>
+<arg>50</arg>
+<arg>30</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200326 18:36:42.800" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-18.png"&gt;&lt;img src="appium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200326 18:36:42.132" endtime="20200326 18:36:42.800"></status>
+<status status="PASS" starttime="20200330 14:20:22.288" endtime="20200330 14:20:23.457"></status>
 </kw>
-<msg timestamp="20200326 18:36:42.833" level="FAIL">WebDriverException: Message: Method is not implemented
-</msg>
-<status status="FAIL" starttime="20200326 18:36:42.125" endtime="20200326 18:36:42.833"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200330 14:20:33.459" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:20:23.457" endtime="20200330 14:20:33.460"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:42.124" endtime="20200326 18:36:42.833"></status>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=Logout of all devices</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:20:33.461" endtime="20200330 14:20:33.579"></status>
 </kw>
-<status status="FAIL" starttime="20200326 18:36:42.124" endtime="20200326 18:36:42.834" critical="yes">WebDriverException: Message: Method is not implemented
-</status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200330 14:20:43.581" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:20:33.580" endtime="20200330 14:20:43.581"></status>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>text=YES</arg>
+</arguments>
+<status status="PASS" starttime="20200330 14:20:43.582" endtime="20200330 14:20:43.702"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200330 14:20:53.703" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200330 14:20:43.702" endtime="20200330 14:20:53.703"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:20:22.286" endtime="20200330 14:20:53.704"></status>
+</kw>
+<kw name="Close All Application" library="mSite_Resources">
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20200330 14:20:53.705" endtime="20200330 14:20:54.278"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:20:53.704" endtime="20200330 14:20:54.279"></status>
+</kw>
+<status status="PASS" starttime="20200330 14:20:22.284" endtime="20200330 14:20:54.279" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20200326 18:35:50.608" endtime="20200326 18:36:42.835"></status>
+<status status="PASS" starttime="20200330 14:16:08.057" endtime="20200330 14:20:54.282"></status>
 </suite>
-<status status="FAIL" starttime="20200326 18:35:50.606" endtime="20200326 18:36:42.841"></status>
+<status status="PASS" starttime="20200330 14:16:08.054" endtime="20200330 14:20:54.292"></status>
 </suite>
-<status status="FAIL" starttime="20200326 18:35:50.584" endtime="20200326 18:36:42.848"></status>
+<status status="PASS" starttime="20200330 14:16:08.032" endtime="20200330 14:20:54.301"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="18">Critical Tests</stat>
-<stat pass="1" fail="18">All Tests</stat>
+<stat pass="18" fail="0">Critical Tests</stat>
+<stat pass="18" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="18" id="s1" name="FlipkartProject1">FlipkartProject1</stat>
-<stat pass="1" fail="18" id="s1-s1" name="POC">FlipkartProject1.POC</stat>
-<stat pass="1" fail="18" id="s1-s1-s1" name="FlipKartmSite">FlipkartProject1.POC.FlipKartmSite</stat>
+<stat pass="18" fail="0" id="s1" name="FlipkartProject1">FlipkartProject1</stat>
+<stat pass="18" fail="0" id="s1-s1" name="POC">FlipkartProject1.POC</stat>
+<stat pass="18" fail="0" id="s1-s1-s1" name="FlipKartmSite">FlipkartProject1.POC.FlipKartmSite</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20200330 14:16:07.989" level="WARN">Collapsing consecutive whitespace during parsing is deprecated. Fix ' #' in file 'C:\Users\Mahesha\git\FK\FlipkartProject1\POC\FlipKartmSite.robot' on line 36.</msg>
 </errors>
 </robot>
