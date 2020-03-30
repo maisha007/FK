@@ -128,7 +128,7 @@ My Account
     Sleep    5
     
 Logout
-    Swipe By Percent    50    100    50    30  
+    Swipe By Percent    50    85    50    50  
     Sleep    5
     Click Text        text=Logout of all devices
     Sleep    5
